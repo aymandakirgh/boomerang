@@ -1,7 +1,7 @@
 # PROGRESS — boomerang-showcase
 
-**Resume here:** M8
-**Updated:** 2026-08-27 17:07
+**Resume here:** M9
+**Updated:** 2026-08-27 17:08
 
 Source of truth for this build. A fresh session reads THIS FILE and continues
 from the first unchecked milestone. It never restarts from scratch, and never
@@ -53,7 +53,7 @@ Vercel-verified commit author: ayman.dakir@growthackers.io.
   - Verify: `npm run build && bash scripts/check-links.sh /company`
   - Notes:
 
-- [ ] **M8 — Logo + favicon set (unique mark, og meta, apple-touch)**
+- [x] **M8 — Logo + favicon set (unique mark, og meta, apple-touch)**
   - Acceptance: `test -s public/favicon.svg && grep -q 'og:title' index.html && grep -q 'apple-touch-icon' index.html`
   - Verify: `test -s public/favicon.svg && grep -q 'og:title' index.html && grep -q 'apple-touch-icon' index.html`
   - Notes: mark already custom (spec SVG); favicon tile + og image + touch icon derived from it.
