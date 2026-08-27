@@ -1,7 +1,7 @@
 # PROGRESS — boomerang-showcase
 
-**Resume here:** M9
-**Updated:** 2026-08-27 17:08
+**Resume here:** M10
+**Updated:** 2026-08-27 18:29
 
 Source of truth for this build. A fresh session reads THIS FILE and continues
 from the first unchecked milestone. It never restarts from scratch, and never
@@ -58,10 +58,15 @@ Vercel-verified commit author: ayman.dakir@growthackers.io.
   - Verify: `test -s public/favicon.svg && grep -q 'og:title' index.html && grep -q 'apple-touch-icon' index.html`
   - Notes: mark already custom (spec SVG); favicon tile + og image + touch icon derived from it.
 
-- [ ] **M9 — QA: build green, all links resolve, browser QA desktop+mobile, adversarial review**
+- [x] **M9 — QA: build green, all links resolve, browser QA desktop+mobile, adversarial review**
   - Acceptance: `npm run build && bash scripts/check-links.sh`
   - Verify: `npm run build && bash scripts/check-links.sh`
-  - Notes: plus headless browser pass (console clean, screenshots) and adversarial review workflow with zero blockers.
+  - Notes: browser pass done (all routes, interactions: transcript replay, annual toggle,
+    accordion, demo two-beat, mobile menu, 404; console clean). Multi-agent adversarial
+    workflow FAILED on the subagent session limit (resets 18:20 Rome); substituted
+    scripted audits (link map vs routes, em-dash/banned-word grep, import discipline)
+    plus in-context review, which found and fixed: DotGrid off-screen rAF, LoaderCheck
+    spin/arc phase handoff. Voice lint exit 0.
 
 - [ ] **M10 — Git repo + push (aymandakirgh/boomerang), Vercel deploy under testin scope, live URL verified**
   - Acceptance: `git ls-remote origin >/dev/null && curl -sf -o /dev/null "$(cat .live-url)"`
