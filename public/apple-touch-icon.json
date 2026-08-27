@@ -1,8 +1,12 @@
 {
   "model": "gstack browse headless Chromium screenshot",
   "prompt": "Rendered public/favicon.svg (ink rx-112 tile, white boomerang mark at scale 1.1) in an img at 180x180 and screenshotted the element",
-  "refs": ["public/favicon.svg"],
-  "params": { "size": "180x180" },
+  "refs": [
+    "public/favicon.svg"
+  ],
+  "params": {
+    "size": "180x180"
+  },
   "created": "2026-08-27T15:07:52Z",
-  "issue": "GRO-372"
+  "issue": "GRO-375"
 }
