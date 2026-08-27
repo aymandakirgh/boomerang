@@ -1,7 +1,7 @@
 # PROGRESS — boomerang-showcase
 
-**Resume here:** M10
-**Updated:** 2026-08-27 18:29
+**Resume here:** all milestones shipped
+**Updated:** 2026-08-27 18:31
 
 Source of truth for this build. A fresh session reads THIS FILE and continues
 from the first unchecked milestone. It never restarts from scratch, and never
@@ -68,7 +68,7 @@ Vercel-verified commit author: ayman.dakir@growthackers.io.
     plus in-context review, which found and fixed: DotGrid off-screen rAF, LoaderCheck
     spin/arc phase handoff. Voice lint exit 0.
 
-- [ ] **M10 — Git repo + push (aymandakirgh/boomerang), Vercel deploy under testin scope, live URL verified**
+- [x] **M10 — Git repo + push (aymandakirgh/boomerang), Vercel deploy under testin scope, live URL verified**
   - Acceptance: `git ls-remote origin >/dev/null && curl -sf -o /dev/null "$(cat .live-url)"`
   - Verify: `git ls-remote origin >/dev/null && curl -sf -o /dev/null "$(cat .live-url)"`
   - Notes: author ayman.dakir@growthackers.io; never force-push; .live-url written after deploy.
