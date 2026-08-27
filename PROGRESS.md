@@ -1,6 +1,6 @@
 # PROGRESS — boomerang-showcase
 
-**Resume here:** M5
+**Resume here:** M6
 **Updated:** 2026-08-27 17:07
 
 Source of truth for this build. A fresh session reads THIS FILE and continues
@@ -38,7 +38,7 @@ Vercel-verified commit author: ayman.dakir@growthackers.io.
   - Verify: `npm run build && bash scripts/check-links.sh /product`
   - Notes:
 
-- [ ] **M5 — Solutions page**
+- [x] **M5 — Solutions page**
   - Acceptance: `npm run build && bash scripts/check-links.sh /solutions`
   - Verify: `npm run build && bash scripts/check-links.sh /solutions`
   - Notes:
