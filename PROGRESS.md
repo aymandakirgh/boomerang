@@ -1,6 +1,6 @@
 # PROGRESS — boomerang-showcase
 
-**Resume here:** M2
+**Resume here:** M3
 **Updated:** 2026-08-27 17:07
 
 Source of truth for this build. A fresh session reads THIS FILE and continues
@@ -23,7 +23,7 @@ Vercel-verified commit author: ayman.dakir@growthackers.io.
   - Verify: `test -s docs/RESEARCH.md`
   - Notes:
 
-- [ ] **M2 — Routing + shared shell: react-router, footer, nav wired, demo page — no dead links**
+- [x] **M2 — Routing + shared shell: react-router, footer, nav wired, demo page — no dead links**
   - Acceptance: `npm run build && bash scripts/check-links.sh`
   - Verify: `npm run build && bash scripts/check-links.sh`
   - Notes: check-links.sh curls every route on a preview server, asserts 200 + non-trivial HTML.
