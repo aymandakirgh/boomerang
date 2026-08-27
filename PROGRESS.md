@@ -1,7 +1,7 @@
 # PROGRESS — boomerang-showcase
 
-**Resume here:** M1 (not started)
-**Updated:** 2026-08-27 16:54
+**Resume here:** M2
+**Updated:** 2026-08-27 17:07
 
 Source of truth for this build. A fresh session reads THIS FILE and continues
 from the first unchecked milestone. It never restarts from scratch, and never
@@ -18,7 +18,7 @@ Vercel-verified commit author: ayman.dakir@growthackers.io.
 
 ## Milestones
 
-- [ ] **M1 — Research: liquid-ui motion values, OriginKit components, reference-site patterns**
+- [x] **M1 — Research: liquid-ui motion values, OriginKit components, reference-site patterns**
   - Acceptance: `test -s docs/RESEARCH.md`
   - Verify: `test -s docs/RESEARCH.md`
   - Notes:
