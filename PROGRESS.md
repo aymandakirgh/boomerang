@@ -1,6 +1,6 @@
 # PROGRESS — boomerang-showcase
 
-**Resume here:** M3
+**Resume here:** M4
 **Updated:** 2026-08-27 17:07
 
 Source of truth for this build. A fresh session reads THIS FILE and continues
@@ -28,7 +28,7 @@ Vercel-verified commit author: ayman.dakir@growthackers.io.
   - Verify: `npm run build && bash scripts/check-links.sh`
   - Notes: check-links.sh curls every route on a preview server, asserts 200 + non-trivial HTML.
 
-- [ ] **M3 — Home below-the-fold sections**
+- [x] **M3 — Home below-the-fold sections**
   - Acceptance: `npm run build`
   - Verify: `npm run build`
   - Notes: first viewport untouched (spec-locked). Sections below: logos/metrics, product narrative, channel showcase, CTA band.
