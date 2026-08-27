@@ -9,3 +9,70 @@ body {
   background-color: #ffffff;
   color: #191919;
 }
+
+/* Vertical marquee: translate -50% over duplicated content so the loop point is invisible. */
+@keyframes vmarquee {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+.v-marquee {
+  animation: vmarquee 34s linear infinite;
+  will-change: transform;
+}
+.v-reverse {
+  animation-direction: reverse;
+}
+.v-group:hover .v-marquee {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .v-marquee {
+    animation: none;
+  }
+}
+
+/* Pricing configurator range input: ink thumb on a hairline track. */
+input[type='range'].ink-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 24px;
+  background: transparent;
+  cursor: pointer;
+}
+input[type='range'].ink-range::-webkit-slider-runnable-track {
+  height: 1px;
+  background: #e5e7eb;
+}
+input[type='range'].ink-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #191919;
+  margin-top: -8.5px;
+  transition: transform 200ms;
+}
+input[type='range'].ink-range::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+input[type='range'].ink-range::-moz-range-track {
+  height: 1px;
+  background: #e5e7eb;
+}
+input[type='range'].ink-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 9999px;
+  background: #191919;
+  transition: transform 200ms;
+}
+input[type='range'].ink-range::-moz-range-thumb:hover {
+  transform: scale(1.15);
+}

@@ -1,0 +1,8 @@
+{
+  "model": "gstack browse headless Chromium screenshot",
+  "prompt": "Rendered scratchpad/og-image.html (1200x630 card: Boomerang wordmark, Mackinac 'Build lasting relationships.', 01/02/03 rows, oversized 5% mark top-right) and screenshotted #card",
+  "refs": ["public/favicon.svg"],
+  "params": { "size": "1200x630", "selector": "#card" },
+  "created": "2026-08-27T15:07:52Z",
+  "issue": "GRO-372"
+}
